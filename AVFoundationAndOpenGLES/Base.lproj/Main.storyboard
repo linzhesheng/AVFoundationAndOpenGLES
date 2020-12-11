@@ -1,24 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B33-yi-KYA">
+                                <rect key="frame" x="20" y="61" width="31" height="30"/>
+                                <state key="normal" title="幻觉"/>
+                                <connections>
+                                    <action selector="clickVertigoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Pz-uH-5e9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="807-Zy-eGg">
+                                <rect key="frame" x="85" y="61" width="31" height="30"/>
+                                <state key="normal" title="毛刺"/>
+                                <connections>
+                                    <action selector="clickRagButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="792-qD-sya"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nD-YG-m1R">
+                                <rect key="frame" x="147" y="61" width="31" height="30"/>
+                                <state key="normal" title="抖动"/>
+                                <connections>
+                                    <action selector="clickShakeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1I6-fb-p7h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyu-pU-RFF">
+                                <rect key="frame" x="202" y="61" width="46" height="30"/>
+                                <state key="normal" title="马赛克"/>
+                                <connections>
+                                    <action selector="clickMosaicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SwT-Rd-kVd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="807-Zy-eGg" firstAttribute="leading" secondItem="B33-yi-KYA" secondAttribute="trailing" constant="34" id="5hf-kX-U5v"/>
+                            <constraint firstItem="B33-yi-KYA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="Duw-uD-Eb2"/>
+                            <constraint firstItem="3nD-YG-m1R" firstAttribute="baseline" secondItem="807-Zy-eGg" secondAttribute="baseline" id="fxw-ev-35s"/>
+                            <constraint firstItem="Oyu-pU-RFF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="kEo-Ez-FT5"/>
+                            <constraint firstItem="807-Zy-eGg" firstAttribute="baseline" secondItem="B33-yi-KYA" secondAttribute="baseline" id="lHo-Nc-il0"/>
+                            <constraint firstItem="3nD-YG-m1R" firstAttribute="leading" secondItem="807-Zy-eGg" secondAttribute="trailing" constant="31" id="n6m-wb-4lG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3nD-YG-m1R" secondAttribute="trailing" symbolic="YES" id="vse-Wc-r7f"/>
+                            <constraint firstItem="B33-yi-KYA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wVY-jS-CNa"/>
+                            <constraint firstItem="Oyu-pU-RFF" firstAttribute="leading" secondItem="3nD-YG-m1R" secondAttribute="trailing" constant="24" id="xqo-X3-bYS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-114" y="0.0"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -16,6 +16,13 @@
 		CBA677812581BCB10029BAB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA677802581BCB10029BAB3 /* main.m */; };
 		CBA6778B2581BCB10029BAB3 /* AVFoundationAndOpenGLESTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA6778A2581BCB10029BAB3 /* AVFoundationAndOpenGLESTests.m */; };
 		CBA677962581BCB10029BAB3 /* AVFoundationAndOpenGLESUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA677952581BCB10029BAB3 /* AVFoundationAndOpenGLESUITests.m */; };
+		CBA677AB2581BD980029BAB3 /* LZVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA677AA2581BD980029BAB3 /* LZVideoCapture.m */; };
+		CBA67A2225822BA40029BAB3 /* LZDisplayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA67A2125822BA40029BAB3 /* LZDisplayLayer.m */; };
+		CBA67A2725822C3E0029BAB3 /* Vertigo.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CBA67A2625822C3E0029BAB3 /* Vertigo.fsh */; };
+		CBA67A2C258249320029BAB3 /* Vertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = CBA67A2B258249320029BAB3 /* Vertex.vsh */; };
+		CBA67A34258250ED0029BAB3 /* Rag.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CBA67A33258250ED0029BAB3 /* Rag.fsh */; };
+		CBA67A39258253170029BAB3 /* Shake.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CBA67A38258253170029BAB3 /* Shake.fsh */; };
+		CBA67A4125830B980029BAB3 /* Mosaic.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CBA67A4025830B980029BAB3 /* Mosaic.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,15 @@
 		CBA677912581BCB10029BAB3 /* AVFoundationAndOpenGLESUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVFoundationAndOpenGLESUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA677952581BCB10029BAB3 /* AVFoundationAndOpenGLESUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundationAndOpenGLESUITests.m; sourceTree = "<group>"; };
 		CBA677972581BCB10029BAB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA677A92581BD980029BAB3 /* LZVideoCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZVideoCapture.h; sourceTree = "<group>"; };
+		CBA677AA2581BD980029BAB3 /* LZVideoCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZVideoCapture.m; sourceTree = "<group>"; };
+		CBA67A2025822BA40029BAB3 /* LZDisplayLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZDisplayLayer.h; sourceTree = "<group>"; };
+		CBA67A2125822BA40029BAB3 /* LZDisplayLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZDisplayLayer.m; sourceTree = "<group>"; };
+		CBA67A2625822C3E0029BAB3 /* Vertigo.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Vertigo.fsh; sourceTree = "<group>"; };
+		CBA67A2B258249320029BAB3 /* Vertex.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vertex.vsh; sourceTree = "<group>"; };
+		CBA67A33258250ED0029BAB3 /* Rag.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Rag.fsh; sourceTree = "<group>"; };
+		CBA67A38258253170029BAB3 /* Shake.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Shake.fsh; sourceTree = "<group>"; };
+		CBA67A4025830B980029BAB3 /* Mosaic.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Mosaic.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +124,17 @@
 				CBA6776F2581BCB00029BAB3 /* AppDelegate.m */,
 				CBA677712581BCB00029BAB3 /* SceneDelegate.h */,
 				CBA677722581BCB00029BAB3 /* SceneDelegate.m */,
+				CBA677A92581BD980029BAB3 /* LZVideoCapture.h */,
+				CBA677AA2581BD980029BAB3 /* LZVideoCapture.m */,
+				CBA67A2025822BA40029BAB3 /* LZDisplayLayer.h */,
+				CBA67A2125822BA40029BAB3 /* LZDisplayLayer.m */,
 				CBA677742581BCB00029BAB3 /* ViewController.h */,
 				CBA677752581BCB00029BAB3 /* ViewController.m */,
+				CBA67A2B258249320029BAB3 /* Vertex.vsh */,
+				CBA67A2625822C3E0029BAB3 /* Vertigo.fsh */,
+				CBA67A33258250ED0029BAB3 /* Rag.fsh */,
+				CBA67A38258253170029BAB3 /* Shake.fsh */,
+				CBA67A4025830B980029BAB3 /* Mosaic.fsh */,
 				CBA677772581BCB00029BAB3 /* Main.storyboard */,
 				CBA6777A2581BCB10029BAB3 /* Assets.xcassets */,
 				CBA6777C2581BCB10029BAB3 /* LaunchScreen.storyboard */,
@@ -239,9 +264,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA67A34258250ED0029BAB3 /* Rag.fsh in Resources */,
 				CBA6777E2581BCB10029BAB3 /* LaunchScreen.storyboard in Resources */,
+				CBA67A2C258249320029BAB3 /* Vertex.vsh in Resources */,
+				CBA67A2725822C3E0029BAB3 /* Vertigo.fsh in Resources */,
 				CBA6777B2581BCB10029BAB3 /* Assets.xcassets in Resources */,
+				CBA67A4125830B980029BAB3 /* Mosaic.fsh in Resources */,
 				CBA677792581BCB00029BAB3 /* Main.storyboard in Resources */,
+				CBA67A39258253170029BAB3 /* Shake.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +298,9 @@
 			files = (
 				CBA677762581BCB00029BAB3 /* ViewController.m in Sources */,
 				CBA677702581BCB00029BAB3 /* AppDelegate.m in Sources */,
+				CBA67A2225822BA40029BAB3 /* LZDisplayLayer.m in Sources */,
 				CBA677812581BCB10029BAB3 /* main.m in Sources */,
+				CBA677AB2581BD980029BAB3 /* LZVideoCapture.m in Sources */,
 				CBA677732581BCB00029BAB3 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +480,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seewo.AVFoundationAndOpenGLES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.linzhesheng22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,7 +498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seewo.AVFoundationAndOpenGLES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.linzhesheng22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
